@@ -6,9 +6,18 @@
 		<title>test</title>
 	</head>
 	<body>
-		Test for github.
-		This is for new branch.
-		This is a easy webpage.
-		<p>Hello,world.</p>
+		<p id="pid">Hello</p>
+		<button onclick="demo()">按钮</button>
+		<img id="imgid" src="butterfly.jpg" onclick="test()">
+		<script type="text/javascript">
+			function demo(){
+				var p1=document.getElementById('pid');
+				p1.innerHTML="World";
+			}
+			function test(){
+				var img1=document.getElementById("imgid");
+				img1.src="city.jpg";
+			}
+		</script>
 	</body>
 	</html>
